@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>StudyShark™ | Learn With Students in Your University!</title>
+  <title> StudyShark | Learn With Student From Your Univeristy! | StudyShark 2016. </title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
+
 <div class="container">
 <%= render "layouts/navBar" %>
 </div>
@@ -17,14 +19,11 @@
 <%= yield %>
 </div>
 
-<p>
-
-<%= render "layouts/pagination" %>
 
 <div class="container">
-<h6> StudyShark is not yet a registered trademark | William Butler | Copyright 2016 </h6>
+<%= render "layouts/pagination" %>
+<h6> StudyShark is not yet a registered trademark | William Butler | University of Maryland: College Park | Copyright 2016 </h6>
 </div> 
 
-</p>
 </body>
 </html>
