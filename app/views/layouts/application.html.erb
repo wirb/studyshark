@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+=<!DOCTYPE html>
 <html>
 <head>
   <title> StudyShark | Learn With Student From Your Univeristy! | StudyShark 2016. </title>
@@ -16,6 +16,9 @@
 </div>
 
 <div class="container">
+	<% flash.each do |name, msg| %>
+		<%= content_tag(:div, msg, class: "alert alert-success") %>
+		<% end %>
 <%= yield %>
 </div>
 

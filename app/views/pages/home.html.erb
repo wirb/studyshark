@@ -1,14 +1,23 @@
 <div class="jumbotron center">
-<div class="container">
-<h1> Welcome </h1>
 
+	<hr>
 
-	<h6>StudyShark is a online web application that allows students to collaborate with other students from the same university.</h6>
+<% if user_signed_in? %>
+
+Wow, you've managed to sign in! Select the class you need help in to join the group.
+
+	<% else %>
+
+<h2> Welcome to StudyShark! </h2>
+
+StudyShark is a online web application that allows students to collaborate with other students from the same university.
 
 <hr> 
-<body>
-		<%= link_to "Log In", whyus_path, class: "btn btn-primary" %>
-		<%= link_to "Sign Up", whyus_path, class: "btn btn-danger" %>
-	</body>
-</div>
+	<p>
+		<%= link_to "Sign In", new_user_session_path, class: "btn btn-primary btn-large" %>
+		<%= link_to "Sign Up", new_user_registration_path, class: "btn btn-danger btn-large" %>
+	</p>
+
+<% end %>
+
 </div>
