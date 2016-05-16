@@ -5,6 +5,8 @@
 <% if user_signed_in? %>
 
 Congratulations! You've signed in! Select the class you need help in to join the group.
+<p></p>
+<%= link_to 'Course Chat Here', groups_path, class: "btn btn-success" %>
 
 	<% else %>
 

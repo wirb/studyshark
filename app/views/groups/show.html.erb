@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Selected Course:</strong>
+  <%= @group.groups %>
+</p>
+
+<div class="jumbotron center"> 
+
+<p class= "label label-warning" > Welcome to the <%= @group.groups %> Chat!
+</p>
+
+<p></p>
+
+<p> Here is where a live chatting system will be implemented </p>
+
+<hr>
+<%= link_to 'Edit', edit_group_path(@group) %> |
+<%= link_to 'Back', groups_path %>
+
+</div>
