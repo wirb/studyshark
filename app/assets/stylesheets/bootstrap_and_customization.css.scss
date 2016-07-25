@@ -1,0 +1,28 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(https://fonts.googleapis.com/css?family=Rancho);
+
+$body-bg:                          #ecf0f1;
+$font-family-sans-serif:           'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$navbar-height:                    50px;
+$navbar-default-bg:                white;
+$navbar-default-brand-color:       #3498db;
+$brand-primary:                    #3498db;
+$jumbotron-bg:                     white;
+
+@import 'bootstrap';
+@import 'bootstrap-sprockets';
+
+.center {
+	text-align: center;
+}
+
+.navbar-brand {
+ 	font-weight: bold;
+ 	font-family: 'Rancho';
+ 	font-size: 2em;
+ }
+
+body  {
+background-color: #3498db;
+background-image: url("http://www.transparenttextures.com/patterns/type.png");
+}

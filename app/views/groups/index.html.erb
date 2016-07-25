@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<h5 class="form-control">Select or Create a Group</h5>
+
+<div class="jumbotron center">
+<table>
+  <thead>
+    <tr>
+      <th>Groups</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+<div>
+  <tbody>
+    <% @groups.each do |group| %>
+      <tr>
+        <td><%= group.description %></td>
+        <td>|</td>
+        <td><%= link_to 'Show', group, class: "label label-success" %></td>
+        <td><%= link_to 'Edit', edit_group_path(group),  class: "label label-warning" %></td>
+        <td><%= link_to 'Destroy', group, method: :delete, data: { confirm: 'Do you really want to delete this group?' },  class: "label label-danger"  %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</div>
+</table>
+
+<br>
+
+<%= link_to 'New Group', new_group_path, class: "btn btn-info form-control" %>
+</div>

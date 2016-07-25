@@ -1,0 +1,7 @@
+<p id="notice"><%= notice %></p>
+
+<p class="panel panel-heading"> Welcome to the <strong> <%= @group.description %> </strong> Group!
+</p>
+
+<%= link_to 'Edit', edit_group_path(@group), class: "label label-warning" %> |
+<%= link_to 'Back', groups_path, class: "label label-success" %>
