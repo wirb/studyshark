@@ -1,6 +1,5 @@
 <p id="notice"><%= notice %></p>
 
-<<<<<<< HEAD
 <h5 class="form-control">Select or Create a Group</h5>
 
 <div class="jumbotron center">
@@ -25,39 +24,9 @@
     <% end %>
   </tbody>
 </div>
-=======
-<h5 class= "form-control"> 
-Select a Course and Study!</h5>
-
-<div class="jumbotron"> 
-<table>
-  <thead>
-    <tr>
-      <th>Courses</th>
-      <th colspan="5"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @groups.each do |group| %>
-      <tr>
-        <td><%= group.groups %></td>
-        <td><%= link_to 'Show', group, class: "label label-success" %></td>
-
-        <td><%= link_to 'Edit', edit_group_path(group), class: "label label-warning" %></td>
-        
-        <td><%= link_to 'Delete', group, method: :delete, data: { confirm: 'Are you sure?' }, class: "label label-danger" %></td>
-      </tr>
-    <% end %>
-  </tbody>
->>>>>>> 8dbea2f435ac99e938a1c3b4bb02a7a5f3b7172f
 </table>
 
 <br>
 
-<<<<<<< HEAD
 <%= link_to 'New Group', new_group_path, class: "btn btn-info form-control" %>
-=======
-<%= link_to 'Create a New Group', new_group_path, class: "btn btn-primary" %>
->>>>>>> 8dbea2f435ac99e938a1c3b4bb02a7a5f3b7172f
 </div>

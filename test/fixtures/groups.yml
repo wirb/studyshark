@@ -1,14 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-<<<<<<< HEAD
   description: MyString
 
 two:
   description: MyString
-=======
-  groups: MyString
-
-two:
-  groups: MyString
->>>>>>> 8dbea2f435ac99e938a1c3b4bb02a7a5f3b7172f

@@ -1,13 +1,6 @@
 Rails.application.routes.draw do
   
-<<<<<<< HEAD
-<<<<<<< HEAD
   resources :groups
-=======
->>>>>>> 3cd7780edb1ec92fab9a569d8fb3f2b8e5ffb60c
-=======
-  resources :groups
->>>>>>> 8dbea2f435ac99e938a1c3b4bb02a7a5f3b7172f
   devise_for :users
   root "pages#home"
   get "whyus" => "pages#whyus"
